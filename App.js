@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Button, FlatList, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, FlatList, TextInput } from 'react-native';
 import { useState } from 'react';
+import Butao from './Butao';
 /*Arquiterura de um ap de administração de poker*/
 export default function App() {
 
@@ -26,6 +27,7 @@ export default function App() {
       style={{borderWidth:1, borderColor:'#ccc', padding:10, marginVertical:10}}
       />
       <Button title='Adicionar jogador' onPress={adicionarJogador} />
+      <Butao nome={'Teste'}></Butao>
 
       <FlatList
       data={jogadores}
